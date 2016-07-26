@@ -1,6 +1,8 @@
 // an array with all of our cart items
+var total = 0;
 var cart = {
   items : []
+  
   };
 
 var updateCart = function () {
@@ -16,16 +18,24 @@ $('.cart-list').append(newHTML);
 var addItem = function (item,price) {
   var item = {
     item:item,
-    price: "$"+price
+    price:price
   };
 
   cart.items.push(item); 
-  // updateCart();
+
+  total+=item.price;
+
+  document.getElementById('total').innerHTML = total;
+ 
   
 }
 
 var clearCart = function () {
-  // TODO: finish
+  cart.items.splice(0,cart.items.length);
+  $('.cart-list').empty();
+  var total = 0;
+  document.getElementById('total').innerHTML = total;
+  
 }
 
 $('.view-cart').on('click', function () {

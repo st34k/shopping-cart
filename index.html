@@ -42,7 +42,7 @@
     <div class="shopping-cart">
       <p class="cart-title">Items in Cart</p>
       <div class="cart-list"></div>
-      <p>Total: $<span class="total">0</span></p>
+      <p>Total: $<span id="total">0</span></p>
       <button class="btn clear-cart">Clear Cart</button>
     </div>
 
@@ -160,7 +160,7 @@
     
       {{#each items}}
           
-        {{item}}  {{price}} <br>
+        {{item}}  ${{price}} <br>
         
       {{/each}}
     

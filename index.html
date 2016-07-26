@@ -5,9 +5,7 @@
   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="node_modules/handlebars/dist/handlebars.min.js"></script>
+ 
   <title>Shopping Cart!</title>
 </head>
 <body>
@@ -151,6 +149,25 @@
     </div>
   </div>
 
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/handlebars/dist/handlebars.min.js"></script>
+  
+
+  <script id="cart-template" type="text/x-handlebars-template">
+
+    
+      {{#each items}}
+          
+        {{item}}  {{price}} <br>
+        
+      {{/each}}
+    
+
+  </script>
+
   <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>

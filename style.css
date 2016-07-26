@@ -96,6 +96,10 @@ body {
   font-weight: bold;
 }
 
+.cart-list ul {
+  list-style:none;
+}
+
 .show {
   display: block;
 }

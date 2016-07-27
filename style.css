@@ -100,6 +100,11 @@ body {
   list-style:none;
 }
 
+.cart-list a:link, .cart-list a:hover{
+  color:red;
+  text-decoration: none;
+}
+
 .show {
   display: block;
 }
